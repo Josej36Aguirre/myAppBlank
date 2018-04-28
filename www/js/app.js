@@ -22,3 +22,14 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+
+//configuramos el proveedor neto de ionic para 
+//ejecutar el controlador y la vista 
+.config(function($stateProvider){
+  $stateProvider
+  .state('paisaje',{
+    url:'',
+    templateUrl:'paisaje/paisaje.html',
+    controller: 'paisajeCtrl'
+  });
+});
